@@ -37,7 +37,7 @@ function getUserInfo() {
 // *渲染用户头像
 function renderAvatar(user) {
     // 获取用户名称
-    var name = user.nikename || user.username
+    var name = user.nickname || user.username
     $('#welcome').html('欢迎&nbsp;&nbsp;' + name)
     // 用户头像渲染
     if (user.user_pic !== null) {
